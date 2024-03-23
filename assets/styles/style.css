@@ -248,12 +248,12 @@ rotate: 45deg;
 }
 
 .scrolling-text-item {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 /* Apply the animation to the text items */
 .scrolling-text-inner>div {
-  animation: scroll-right 2s linear infinite;
+  animation: scroll-right 10s linear infinite;
 }
 
  
