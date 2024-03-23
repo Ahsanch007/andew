@@ -286,9 +286,10 @@ rotate: 45deg;
   line-height: 2rem;
   text-align: center;
 }
-
-
-
+.slick-slider img {
+  width: 250px;
+  height: 250px;
+}
 /* media query  */
 
 @media(max-width:800px){
