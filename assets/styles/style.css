@@ -13,6 +13,9 @@ body {
   background-color: #8DD2E3 !important;
 }
 
+.container2{
+  padding: 0px 1.25rem;
+}
 
 .header-section{
   position: fixed;
@@ -118,7 +121,7 @@ body {
       transform: scale(1);
   }
   50% {
-      transform: scale(1.2);
+      transform: scale(1.1);
   }
   100% {
       transform: scale(1);
@@ -127,6 +130,10 @@ body {
 
 .animates-img img {
   animation: heartbeat .5s infinite;
+  width: 400px;
+}
+.playbtn {
+  cursor: pointer;
 }
 .bg-section-main{
   height: 100vh;
@@ -140,7 +147,11 @@ body {
   justify-content: center;
   }
   
-
+.brokie{
+  font-size: 80px;
+  text-transform: uppercase;
+  padding: 40px 0px;
+}
 
 .bg-section{
 height: 1200px;
@@ -381,5 +392,9 @@ rotate: 45deg;
 .slick-slider img {
   width: 100%;
   height: auto;
+}
+  
+.brokie{
+  font-size: 32px;
 }
 }
