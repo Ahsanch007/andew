@@ -331,7 +331,16 @@
                 slidesToScroll: 1, // Adjust as needed
                 autoplay: true, // Optionally enable autoplay
                 autoplaySpeed: 10000, // Adjust autoplay speed as needed
-                arrows: false // Hide arrow navigation
+                arrows: false, // Hide arrow navigation
+                responsive: [
+                    {
+                        breakpoint: 768, // Breakpoint for smaller screens
+                        settings: {
+                            slidesToShow: 1, // Show 1 slide on smaller screens
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
     </script>
