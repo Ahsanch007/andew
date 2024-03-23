@@ -128,7 +128,18 @@ body {
 .animates-img img {
   animation: heartbeat .5s infinite;
 }
-
+.bg-section-main{
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
 
 
 .bg-section{
