@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap with Custom Fonts</title>
+    <title>Gtop</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
@@ -18,9 +18,9 @@
 </head>
 
 <body>
-    <audio id="audio"
-        src="./assets/images/INDILA-Tourner Dans le vide _TOPG _whatsappstatus _ytshorts _new _2023bgm _2023(M4A_128K).m4a"
-        autoplay></audio>
+    <audio id="audio" autoplay loop type="audio/filetype"
+        src="./assets/images/INDILA-Tourner Dans le vide _TOPG _whatsappstatus _ytshorts _new _2023bgm _2023(M4A_128K).m4a"></audio>
+
     <!-- header-section  -->
     <header class="header-section">
         <div class="d-flex justify-content-between align-items-center">
@@ -399,26 +399,33 @@
         });
     </script>
     <script>
+        // Icon definitions
         const playIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play text-black"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>';
         const pauseIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pause text-black"><rect width="4" height="16" x="6" y="4"></rect><rect width="4" height="16" x="14" y="4"></rect></svg>';
 
+        // Get audio element
         const audio = document.getElementById('audio');
         let isPlaying = true;
 
+        // Function to toggle play/pause
         function togglePlayPause() {
             if (isPlaying) {
-                audio.pause();
+                audio.pause(); // Pause audio if currently playing
             } else {
-                audio.play();
+                audio.play(); // Play audio if currently paused
             }
-            isPlaying = !isPlaying;
-            updateButton();
+            isPlaying = !isPlaying; // Toggle isPlaying flag
+            updateButton(); // Update button icon
         }
 
+        // Function to update button icon
         function updateButton() {
             const playbtn = document.querySelector('.playbtn');
             playbtn.innerHTML = isPlaying ? pauseIcon : playIcon;
         }
+
+        // Initial call to update button icon based on autoplay status
+        updateButton();
     </script>
 
 </body>
